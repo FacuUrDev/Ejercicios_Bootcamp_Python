@@ -10,15 +10,15 @@ class Vehiculo:
         return self.color + " " + self.puertas
 
 
-corsa = Vehiculo("Azul", "4")
-print(corsa)
+corsa = Vehiculo("rojo", "5")
+print(clio)
 
 file = open('vehiculo_objeto', 'w+b')
 
-dump(corsa, file)
+dump(clio, file)
 
 file.seek(0)
-nuevo_corsa = load(file)
+nuevo_clio = load(file)
 
-print(nuevo_corsa)
+print(nuevo_clio)
 file.close()
